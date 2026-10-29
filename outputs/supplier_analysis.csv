@@ -1,0 +1,5 @@
+﻿supplier_id,supplier_name,material_category,initial_price,historical_average_price,price_vs_historical,delivery_days,lead_time_days,capacity,quality_score,reliability_score,qualification_status,capacity_feasible,delivery_feasible,qualified,is_current_supplier,supplier_score
+S003,Supplier C,Brake Valve,111,111.0,0.0,20,20,15000,92,94,Qualified,True,True,True,False,0.9610000000000001
+S001,Supplier A,Brake Valve,120,119.66666666666667,0.3333333333333286,30,30,15000,94,91,Qualified,True,True,True,True,0.9595
+S002,Supplier B,Brake Valve,108,110.0,-2.0,25,25,15000,88,96,Qualified,True,True,True,False,0.954
+S004,Supplier D,Brake Valve,115,,,35,35,15000,90,89,Qualified,True,False,True,False,0.9210714285714287

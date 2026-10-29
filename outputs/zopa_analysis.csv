@@ -1,0 +1,4 @@
+﻿rfq_id,supplier_id,material_id,quantity,initial_price,supplier_quoted_total,buyer_reservation_value,zopa_exists,zopa_low,zopa_high
+RFQ001,S001,M001,10000,120,1200000,1100000.0,False,,
+RFQ001,S002,M001,10000,108,1080000,1100000.0,True,1080000.0,1100000.0
+RFQ001,S003,M001,10000,111,1110000,1100000.0,False,,

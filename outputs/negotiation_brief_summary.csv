@@ -1,0 +1,2 @@
+﻿case_id,rfq_id,material_id,required_quantity,current_supplier_id,current_offer_per_unit,required_delivery_days,batna_supplier,batna_supplier_id,batna_total_cost,buyer_reservation_value,buyer_reservation_per_unit,primary_negotiation_levers
+NEG001,RFQ001,M001,10000.0,S001,120.0,30.0,Supplier B,S002,1100000.0,1100000.0,110.0,"price_concession, quantity_commitment"

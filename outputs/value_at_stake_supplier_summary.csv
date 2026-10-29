@@ -1,0 +1,5 @@
+﻿supplier_id,total_current_spend,total_alternative_spend,total_value_at_stake,average_savings_pct,maximum_savings_per_unit,negotiation_priority,value_at_stake_rank
+S001,1200000.0,1080000.0,120000.0,10.0,12.0,High,1
+S004,1150000.0,1080000.0,70000.0,6.086956521739131,7.0,Medium,2
+S003,1110000.0,1080000.0,30000.0,2.7027027027027026,3.0,Medium,3
+S002,1080000.0,1080000.0,0.0,0.0,0.0,Low,4

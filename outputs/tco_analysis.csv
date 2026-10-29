@@ -1,0 +1,5 @@
+﻿rfq_id,supplier_id,supplier_name,material_id,quantity,initial_price,payment_terms_days,transport_unit_cost,purchase_cost,transport_cost,financing_cost,known_tco,tco_per_unit,quality_score,reliability_score,delivery_risk,on_time_delivery_pct,tco_risk,tco_rank,tco_recommendation
+RFQ001,S001,Supplier A,M001,10000,120,30,5,1200000,50000,0.0,1250000.0,125.0,94,91,High,50.0,Medium,4,Evaluate cost alongside delivery and supplier performance.
+RFQ001,S002,Supplier B,M001,10000,108,30,5,1080000,50000,0.0,1130000.0,113.0,88,96,High,0.0,Medium,1,Evaluate cost alongside delivery and supplier performance.
+RFQ001,S003,Supplier C,M001,10000,111,45,5,1110000,50000,0.0,1160000.0,116.0,92,94,Low,100.0,Low,2,Competitive known TCO with relatively low modeled risk.
+RFQ001,S004,Supplier D,M001,10000,115,30,5,1150000,50000,0.0,1200000.0,120.0,90,89,High,0.0,Medium,3,Evaluate cost alongside delivery and supplier performance.

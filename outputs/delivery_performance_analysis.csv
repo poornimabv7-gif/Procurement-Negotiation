@@ -1,0 +1,7 @@
+﻿supplier_id,po_id,promised_delivery_date,actual_delivery_date,promised_days,actual_days,delay_days,on_time,delay_category
+S001,PO001,2026-02-14,2026-02-16,30,32,2,False,Low Delay
+S001,PO002,2026-04-09,2026-04-08,30,29,-1,True,On Time
+S002,PO003,2026-03-02,2026-03-05,25,28,3,False,Moderate Delay
+S003,PO004,2026-03-12,2026-03-11,20,19,-1,True,On Time
+S003,PO006,2026-06-30,2026-06-30,20,20,0,True,On Time
+S004,PO007,2026-08-10,2026-08-15,35,40,5,False,Moderate Delay

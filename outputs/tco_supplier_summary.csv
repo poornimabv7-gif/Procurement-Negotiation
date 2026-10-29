@@ -1,0 +1,5 @@
+﻿supplier_id,total_known_tco,average_tco_per_unit,quotation_count,tco_risk,tco_rank,tco_position
+S001,1250000.0,125.0,1,Medium,4,Higher TCO
+S002,1130000.0,113.0,1,Medium,1,Lowest TCO
+S003,1160000.0,116.0,1,Low,2,Higher TCO
+S004,1200000.0,120.0,1,Medium,3,Higher TCO

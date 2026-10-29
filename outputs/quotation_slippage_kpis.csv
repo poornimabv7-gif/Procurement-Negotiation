@@ -1,0 +1,5 @@
+﻿supplier_id,quotation_count,average_price_slippage,average_price_slippage_pct,total_revisions,average_validity_days,quotation_slippage_risk
+S001,1,2.0,1.6666666666666667,1,10.0,Low
+S002,1,1.0,0.9259259259259258,1,10.0,Low
+S003,1,0.0,0.0,0,15.0,Low
+S004,1,3.0,2.608695652173913,1,10.0,Medium

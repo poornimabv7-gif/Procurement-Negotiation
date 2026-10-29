@@ -1,0 +1,1322 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Procurement Negotiation AI - Final Report
+</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f4f6f8;
+        color: #17212b;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 94%;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .header {
+        background: #17212b;
+        color: white;
+        padding: 42px 0;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 38px;
+    }
+
+    .header p {
+        margin: 8px 0 0;
+        color: #dce3e8;
+        font-size: 17px;
+    }
+
+    .section {
+        background: white;
+        margin: 28px 0;
+        padding: 34px;
+        border-radius: 14px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    .section h2 {
+        margin-top: 0;
+        font-size: 29px;
+    }
+
+    .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+    }
+
+    .summary-card {
+        background: #f7f9fb;
+        padding: 21px;
+        border-radius: 11px;
+        border-left: 5px solid #17212b;
+    }
+
+    .summary-card span {
+        display: block;
+        color: #66717a;
+        font-size: 14px;
+    }
+
+    .summary-card strong {
+        display: block;
+        font-size: 24px;
+        margin-top: 5px;
+    }
+
+    .recommendation {
+        margin-top: 25px;
+        background: #f1f6fa;
+        border-left: 6px solid #17212b;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .recommendation h3 {
+        margin-top: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th {
+        background: #17212b;
+        color: white;
+        padding: 14px;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    td {
+        padding: 14px;
+        border-bottom: 1px solid #dfe4e8;
+    }
+
+    tr:nth-child(even) {
+        background: #f7f9fb;
+    }
+
+    .strong {
+        font-weight: 700;
+    }
+
+    .note {
+        margin-top: 22px;
+        background: #f7f9fb;
+        border-left: 5px solid #17212b;
+        padding: 21px;
+        border-radius: 9px;
+    }
+
+    .flow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .flow-box {
+        background: #17212b;
+        color: white;
+        padding: 12px 17px;
+        border-radius: 8px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .arrow {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .strategy-card {
+        background: #f7f9fb;
+        border: 1px solid #dfe4e8;
+        border-radius: 11px;
+        padding: 22px;
+        margin: 18px 0;
+    }
+
+    .strategy-card h3 {
+        margin-top: 0;
+    }
+
+    .price-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        margin: 18px 0;
+    }
+
+    .price-box {
+        background: white;
+        border: 1px solid #dfe4e8;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .price-box span {
+        display: block;
+        color: #66717a;
+        font-size: 13px;
+    }
+
+    .price-box strong {
+        font-size: 20px;
+    }
+
+    .footer {
+        text-align: center;
+        color: #66717a;
+        padding: 35px;
+        font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+
+        .section {
+            padding: 22px;
+            overflow-x: auto;
+        }
+
+        table {
+            min-width: 900px;
+        }
+
+        .header h1 {
+            font-size: 30px;
+        }
+    }
+    
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container">
+
+        <h1>
+            Procurement Negotiation AI
+        </h1>
+
+        <p>
+            Final Negotiation Analysis &amp; Decision Report
+        </p>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     EXECUTIVE SUMMARY
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Executive Summary
+    </h2>
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+            <span>
+                Negotiation Case
+            </span>
+
+            <strong>
+                NEG001
+            </strong>
+        </div>
+
+
+        <div class="summary-card">
+            <span>
+                Material
+            </span>
+
+            <strong>
+                M001
+            </strong>
+        </div>
+
+
+        <div class="summary-card">
+            <span>
+                Required Quantity
+            </span>
+
+            <strong>
+                10,000
+            </strong>
+        </div>
+
+
+        <div class="summary-card">
+            <span>
+                Current Supplier
+            </span>
+
+            <strong>
+                S001
+            </strong>
+        </div>
+
+
+        <div class="summary-card">
+            <span>
+                BATNA Supplier
+            </span>
+
+            <strong>
+                Supplier B
+            </strong>
+        </div>
+
+
+        <div class="summary-card">
+            <span>
+                BATNA / Unit
+            </span>
+
+            <strong>
+                ₹110.00
+            </strong>
+        </div>
+
+    </div>
+
+
+    <div class="recommendation">
+
+        <h3>
+            Final Negotiation Recommendation
+        </h3>
+
+        <p>
+
+            <strong>
+                Supplier B
+            </strong>
+
+            (S002)
+            is the top-ranked negotiation candidate.
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Target Price:
+            </strong>
+
+            ₹110.00
+
+            &nbsp;&nbsp;&nbsp;
+
+            <strong>
+                Walk-Away:
+            </strong>
+
+            ₹110.00
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Priority:
+            </strong>
+
+            High
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Buyer Action:
+            </strong>
+
+            Negotiate delivery protection and service commitments alongside price
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ANALYTICAL FLOW
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Analytical Flow
+    </h2>
+
+    <div class="flow">
+
+        <div class="flow-box">
+            Procurement Data
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            Supplier Analysis
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            Outside Options
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            BATNA
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            Reservation Value
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            ZOPA
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            Game Theory
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            Negotiation Strategy
+        </div>
+
+        <div class="arrow">
+            →
+        </div>
+
+        <div class="flow-box">
+            Final Decision
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BATNA
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        BATNA and Reservation Value
+    </h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Item</th>
+                <th>Result</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>
+                    BATNA Supplier
+                </td>
+
+                <td class="strong">
+
+                    Supplier B
+
+                    (
+                    S002
+                    )
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    BATNA Total Cost
+                </td>
+
+                <td class="strong">
+
+                    ₹1,100,000.00
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    BATNA / Unit
+                </td>
+
+                <td class="strong">
+
+                    ₹110.00
+
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    Buyer Reservation / Unit
+                </td>
+
+                <td class="strong">
+
+                    ₹110.00
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<!-- =====================================================
+     NEGOTIATION STRATEGY
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Negotiation Strategy
+    </h2>
+
+    
+        <div class="strategy-card">
+
+            <h3>
+                Supplier B
+                (S002)
+            </h3>
+
+            <div class="price-grid">
+
+                <div class="price-box">
+                    <span>Current Offer</span>
+                    <strong>
+                        ₹108.00
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Opening Price</span>
+                    <strong>
+                        ₹105.84
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Target Price</span>
+                    <strong>
+                        ₹108.00
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Walk-Away Price</span>
+                    <strong>
+                        ₹110.00
+                    </strong>
+                </div>
+
+            </div>
+
+            <p>
+                <strong>ZOPA:</strong>
+                True
+            </p>
+
+            <p>
+                <strong>Negotiation Levers:</strong>
+                Price Concession, Quantity Commitment
+            </p>
+
+            <p>
+                <strong>Negotiation Posture:</strong>
+                Commercially Protective / Mitigate Delivery Risk
+            </p>
+
+            <p>
+                <strong>Supplier Strategy:</strong>
+                Protect the strong commercial position while using delivery performance as the main negotiation condition. Retain the competitive price and obtain firm delivery commitments.
+            </p>
+
+        </div>
+        
+        <div class="strategy-card">
+
+            <h3>
+                Supplier A
+                (S001)
+            </h3>
+
+            <div class="price-grid">
+
+                <div class="price-box">
+                    <span>Current Offer</span>
+                    <strong>
+                        ₹120.00
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Opening Price</span>
+                    <strong>
+                        ₹105.64
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Target Price</span>
+                    <strong>
+                        ₹107.80
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Walk-Away Price</span>
+                    <strong>
+                        ₹110.00
+                    </strong>
+                </div>
+
+            </div>
+
+            <p>
+                <strong>ZOPA:</strong>
+                False
+            </p>
+
+            <p>
+                <strong>Negotiation Levers:</strong>
+                Price Concession, Quantity Commitment
+            </p>
+
+            <p>
+                <strong>Negotiation Posture:</strong>
+                Firm / Challenge Price / Seek Better Terms
+            </p>
+
+            <p>
+                <strong>Supplier Strategy:</strong>
+                Challenge the current ₹120 supplier offer. Use qualified alternatives and the buyer&#x27;s ₹110 reservation boundary to seek a materially lower price or improved commercial terms.
+            </p>
+
+        </div>
+        
+        <div class="strategy-card">
+
+            <h3>
+                Supplier C
+                (S003)
+            </h3>
+
+            <div class="price-grid">
+
+                <div class="price-box">
+                    <span>Current Offer</span>
+                    <strong>
+                        ₹111.00
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Opening Price</span>
+                    <strong>
+                        ₹105.64
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Target Price</span>
+                    <strong>
+                        ₹107.80
+                    </strong>
+                </div>
+
+                <div class="price-box">
+                    <span>Walk-Away Price</span>
+                    <strong>
+                        ₹110.00
+                    </strong>
+                </div>
+
+            </div>
+
+            <p>
+                <strong>ZOPA:</strong>
+                False
+            </p>
+
+            <p>
+                <strong>Negotiation Levers:</strong>
+                Price Concession, Quantity Commitment
+            </p>
+
+            <p>
+                <strong>Negotiation Posture:</strong>
+                Firm / Challenge Price / Seek Better Terms
+            </p>
+
+            <p>
+                <strong>Supplier Strategy:</strong>
+                Use the supplier&#x27;s strong delivery performance as a positive commercial factor, but verify supplier claims before relying on them. Seek a limited price improvement toward ₹110 or obtain improved commercial terms.
+            </p>
+
+        </div>
+        
+
+</section>
+
+
+<!-- =====================================================
+     TCO
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Total Cost of Ownership
+    </h2>
+
+    <p>
+
+        TCO represents the known cost components currently
+        modeled by the procurement analysis.
+
+    </p>
+
+    
+    <table>
+
+        <thead>
+            <tr>
+                <th>Supplier ID</th>
+                <th>Supplier</th>
+                <th>Purchase Cost</th>
+                <th>Transport Cost</th>
+                <th>Financing Cost</th>
+                <th>Known TCO</th>
+                <th>TCO / Unit</th>
+                <th>TCO Risk</th>
+                <th>Rank</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        <tr>
+            <td class="strong">
+                S001
+            </td>
+
+            <td>
+                Supplier A
+            </td>
+
+            <td class="strong">
+                ₹1,200,000.00
+            </td>
+
+            <td class="strong">
+                ₹50,000.00
+            </td>
+
+            <td class="strong">
+                ₹0.00
+            </td>
+
+            <td class="strong">
+                ₹1,250,000.00
+            </td>
+
+            <td class="strong">
+                ₹125.00
+            </td>
+
+            <td>
+                Medium
+            </td>
+
+            <td>
+                4
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="strong">
+                S002
+            </td>
+
+            <td>
+                Supplier B
+            </td>
+
+            <td class="strong">
+                ₹1,080,000.00
+            </td>
+
+            <td class="strong">
+                ₹50,000.00
+            </td>
+
+            <td class="strong">
+                ₹0.00
+            </td>
+
+            <td class="strong">
+                ₹1,130,000.00
+            </td>
+
+            <td class="strong">
+                ₹113.00
+            </td>
+
+            <td>
+                Medium
+            </td>
+
+            <td>
+                1
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="strong">
+                S003
+            </td>
+
+            <td>
+                Supplier C
+            </td>
+
+            <td class="strong">
+                ₹1,110,000.00
+            </td>
+
+            <td class="strong">
+                ₹50,000.00
+            </td>
+
+            <td class="strong">
+                ₹0.00
+            </td>
+
+            <td class="strong">
+                ₹1,160,000.00
+            </td>
+
+            <td class="strong">
+                ₹116.00
+            </td>
+
+            <td>
+                Low
+            </td>
+
+            <td>
+                2
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="strong">
+                S004
+            </td>
+
+            <td>
+                Supplier D
+            </td>
+
+            <td class="strong">
+                ₹1,150,000.00
+            </td>
+
+            <td class="strong">
+                ₹50,000.00
+            </td>
+
+            <td class="strong">
+                ₹0.00
+            </td>
+
+            <td class="strong">
+                ₹1,200,000.00
+            </td>
+
+            <td class="strong">
+                ₹120.00
+            </td>
+
+            <td>
+                Medium
+            </td>
+
+            <td>
+                3
+            </td>
+        </tr>
+        
+        </tbody>
+
+    </table>
+    
+
+    
+        <div class="note">
+
+            <strong>
+                TCO interpretation:
+            </strong>
+
+            Supplier B
+            has the lowest modeled TCO per unit at
+
+            <strong>
+                ₹113.00
+            </strong>
+
+            per unit.
+
+        </div>
+        
+
+</section>
+
+
+<!-- =====================================================
+     VALUE AT STAKE
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Value at Stake
+    </h2>
+
+    <p>
+
+        Value-at-Stake represents the modeled incremental
+        savings opportunity relative to the benchmark used
+        by the analysis.
+
+    </p>
+
+    
+    <table>
+
+        <thead>
+            <tr>
+                <th>Supplier ID</th>
+                <th>Supplier</th>
+                <th>Value at Stake</th>
+                <th>Savings %</th>
+                <th>Priority</th>
+                <th>Rank</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        <tr>
+            <td class="strong">
+                S001
+            </td>
+
+            <td>
+                Supplier A
+            </td>
+
+            <td class="strong">
+                ₹120,000.00
+            </td>
+
+            <td>
+                10.00%
+            </td>
+
+            <td>
+                High
+            </td>
+
+            <td>
+                1
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="strong">
+                S004
+            </td>
+
+            <td>
+                Supplier D
+            </td>
+
+            <td class="strong">
+                ₹70,000.00
+            </td>
+
+            <td>
+                6.09%
+            </td>
+
+            <td>
+                Medium
+            </td>
+
+            <td>
+                2
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="strong">
+                S003
+            </td>
+
+            <td>
+                Supplier C
+            </td>
+
+            <td class="strong">
+                ₹30,000.00
+            </td>
+
+            <td>
+                2.70%
+            </td>
+
+            <td>
+                Medium
+            </td>
+
+            <td>
+                3
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="strong">
+                S002
+            </td>
+
+            <td>
+                Supplier B
+            </td>
+
+            <td class="strong">
+                ₹0.00
+            </td>
+
+            <td>
+                0.00%
+            </td>
+
+            <td>
+                Low
+            </td>
+
+            <td>
+                4
+            </td>
+        </tr>
+        
+        </tbody>
+
+    </table>
+    
+
+
+    <div class="note">
+
+        <strong>
+            Value-at-Stake interpretation:
+        </strong>
+
+        <p>
+
+            The Value-at-Stake calculation uses the benchmark
+            price from the procurement quotation data and the
+            required quantity for the negotiation case.
+
+        </p>
+
+        <p>
+
+            A supplier at the benchmark price has zero
+            incremental price savings opportunity against
+            that benchmark.
+
+        </p>
+
+    </div>
+
+    
+        <div class="note">
+
+            <strong>
+                Largest modeled Value-at-Stake:
+            </strong>
+
+            Supplier A
+
+            with
+
+            <strong>
+                ₹120,000.00
+            </strong>.
+
+        </div>
+        
+
+</section>
+
+
+<!-- =====================================================
+     FINAL DECISION
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Final Negotiation Decision
+    </h2>
+
+    <div class="recommendation">
+
+        <h3>
+            Supplier B
+        </h3>
+
+        <p>
+
+            <strong>
+                Supplier ID:
+            </strong>
+
+            S002
+
+        </p>
+
+        <p>
+
+            <strong>
+                Target Price:
+            </strong>
+
+            ₹110.00
+
+        </p>
+
+        <p>
+
+            <strong>
+                Walk-Away Price:
+            </strong>
+
+            ₹110.00
+
+        </p>
+
+        <p>
+
+            <strong>
+                Priority:
+            </strong>
+
+            High
+
+        </p>
+
+        <p>
+
+            <strong>
+                Recommended Buyer Action:
+            </strong>
+
+            Negotiate delivery protection and service commitments alongside price
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTERPRETATION
+     ===================================================== -->
+
+<section class="section">
+
+    <h2>
+        Interpretation
+    </h2>
+
+    <p>
+
+        The model combines quantitative procurement analysis
+        with game-theory concepts to support negotiation
+        preparation.
+
+    </p>
+
+    <p>
+
+        The quantitative layer establishes supplier
+        alternatives, BATNA, reservation value, ZOPA,
+        should-cost, TCO and Value-at-Stake.
+
+    </p>
+
+    <p>
+
+        The game-theory layer adds Nash bargaining,
+        signalling, credibility, information asymmetry,
+        timing / hold-up analysis and Shapley-based
+        negotiation lever attribution.
+
+    </p>
+
+    <p>
+
+        These analytical outputs are converted into a
+        practical buyer strategy containing an opening
+        position, target price, walk-away boundary and
+        supplier-specific negotiation actions.
+
+    </p>
+
+
+    <div class="note">
+
+        <strong>
+            Important:
+        </strong>
+
+        <p>
+
+            This capstone uses synthetic/sample procurement
+            data for demonstration and modelling purposes.
+            The results should not be presented as actual
+            Knorr-Bremse supplier findings or real company
+            data.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    Procurement Negotiation AI
+    &nbsp;|&nbsp;
+    Final Negotiation Analysis
+
+</footer>
+
+
+</body>
+
+</html>

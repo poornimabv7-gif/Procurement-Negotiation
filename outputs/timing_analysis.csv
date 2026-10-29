@@ -1,0 +1,5 @@
+﻿supplier_id,supplier_name,lead_time_days,delivery_days,lead_time_gap,delivery_gap,timing_dependency,timing_risk
+S003,Supplier C,20,20,-10,-10,0,Low Timing Risk
+S001,Supplier A,30,30,0,0,0,Low Timing Risk
+S002,Supplier B,25,25,-5,-5,0,Low Timing Risk
+S004,Supplier D,35,35,5,5,5,Moderate Timing Risk

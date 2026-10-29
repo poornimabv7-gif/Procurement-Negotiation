@@ -1,0 +1,4 @@
+﻿supplier_id,supplier_name,historical_avg_price,supplier_reservation_per_unit,buyer_reservation_per_unit,nash_price_per_unit,nash_total_price
+S003,Supplier C,111.0,111.0,110.0,110.5,1105000.0
+S001,Supplier A,119.66666666666667,119.66666666666667,110.0,114.83333333333334,1148333.3333333335
+S002,Supplier B,110.0,110.0,110.0,110.0,1100000.0

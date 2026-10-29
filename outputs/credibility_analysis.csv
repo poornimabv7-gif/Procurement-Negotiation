@@ -1,0 +1,5 @@
+﻿supplier_id,signal_type,signal_value,evidence_available,evidence_strength,evidence_available_score,signal_credibility_score,signal_status,credibility_assessment,credibility_action
+S001,alternative_customer,125.0,Yes,0.9,1.0,0.9,Strong Evidence,Credible - Can Be Considered,Use as negotiation input
+S003,alternative_customer,118.0,No,0.2,0.0,0.0,Weak / Unverified,Unverified - Do Not Rely Without Verification,Do not use as decision basis
+S001,capacity_constraint,0.95,Yes,0.8,1.0,0.8,Strong Evidence,Credible - Can Be Considered,Use as negotiation input
+S003,raw_material_increase,8.0,Yes,0.7,1.0,0.7,Strong Evidence,Credible - Can Be Considered,Use as negotiation input

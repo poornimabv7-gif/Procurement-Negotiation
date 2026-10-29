@@ -1,0 +1,5 @@
+﻿supplier_id,total_timeline_events,first_activity_date,latest_activity_date,average_days_between_events,maximum_days_between_events,relationship_duration_days,activity_frequency,timeline_dependency,timeline_risk
+S001,1,2026-09-20,2026-09-20,,,0,Single / New Activity,Unknown,Unknown
+S002,1,2026-09-20,2026-09-20,,,0,Single / New Activity,Unknown,Unknown
+S003,1,2026-09-20,2026-09-20,,,0,Single / New Activity,Unknown,Unknown
+S004,1,2026-09-20,2026-09-20,,,0,Single / New Activity,Unknown,Unknown
